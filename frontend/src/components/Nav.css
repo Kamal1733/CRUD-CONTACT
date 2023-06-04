@@ -1,0 +1,20 @@
+.nav-ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.navv{
+    background-color: rgb(83, 221, 231);
+    margin-top: -25px;
+    
+    height:90px;
+
+}
+.links{
+
+text-decoration: none;
+
+
+    
+}
+
