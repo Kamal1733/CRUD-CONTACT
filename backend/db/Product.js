@@ -7,4 +7,4 @@ const mongoose = require('mongoose');
    //  company:String,
    //  date:String,
  });
- module.exports= mongoose.model("products",productSchema)
+ module.exports= mongoose.model("contacts",productSchema)

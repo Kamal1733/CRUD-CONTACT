@@ -60,6 +60,10 @@ app.post("/add-product", verifyToken, async (req, resp) => {
   resp.send(result);
 });
 
+app.use('/test', (req, res) => {
+  res.send({ name: "Kamal", age: 21 })
+})
+
 //PRODUCT LIST FIND APIs    Route bnayenege api k liye
 app.get("/products", verifyToken, async (req, resp) => {
   let products = await Product.find();
