@@ -16,15 +16,11 @@ const Nav = () => {
           <li>
             <Link className="links"  to="/"> Home </Link>
           </li>
-          {/* <li>
-            <Link   className="links"  to="/add"> Products </Link>
-          </li> */}
+          
           <li>
             <Link  className="links"  to="/add">Create Contact</Link>
           </li>
-          {/* <li>
-            <Link  className="links"  to="/update"> Update Data </Link>
-          </li> */}
+          
           <li>
             <Link  className="links"  to="/update"> Profile </Link>
           </li>

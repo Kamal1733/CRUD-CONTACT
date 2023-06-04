@@ -21,7 +21,7 @@ const AddProduct = () => {
    alert("Contact Saved Successfully");
 
     const userId=JSON.parse(localStorage.getItem("user"))._id;
-    let  result= fetch("http://localhost:5000/add-product",{
+    let  result= fetch("https://contactapp-grq6.onrender.com/add-product",{
       method:"post",
       body: JSON.stringify({name,price, category,company,userId,date}),
       headers:{
@@ -58,38 +58,6 @@ const AddProduct = () => {
         value={price}
       />
       {error && !price  && <span  className="spn">Enter a vaild Registration number</span>} 
-      {/* <input
-        type="text"
-        placeholder="Book Category"
-        onChange={(e) => {
-          setCategory(e.target.value);
-        }}
-        value={category}
-      />
-      {error && !category  && <span  className="spn">Enter vaild category</span>}
-      
-     
-      <input
-        type="text"
-        placeholder="Book Name"
-        onChange={(e) => {
-          setCompany(e.target.value);
-        }}
-        value={company}
-      />
-      {error && !company  && <span  className="spn">Enter vaild Data </span>}
-      
-      <label>Issue date</label>
-      <input
-        type="text"
-        placeholder="Issue Date"
-        onChange={(e) => {
-          setDate(e.target.value)
-          
-        }}
-        value={date}
-        className="date"
-      /> */}
 
       <button  style={{height :"50px"}} onClick={addProduct}>Save Contact</button>
     </div>

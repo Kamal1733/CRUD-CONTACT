@@ -4,12 +4,10 @@ import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PrivateComponents from "./components/PrivateComponents";
 import Signup from "./components/Signup";
-
 import Login from "./components/Login";
 import AddProduct from "./AddProduct";
 import ProductList from "./components/ProductList";
 import UpdateProduct from "./components/UpdateProduct";
-
 function App() {
   return (
     <div className="App">

@@ -15,7 +15,7 @@ const Signup = () => {
   });
   const collectData = async () => {
     console.warn(name, email, password);
-    let  result = await fetch("http://localhost:5000/register", {
+    let  result = await fetch("https://contactapp-grq6.onrender.com/register", {
       method: "post",
       body: JSON.stringify({ name, email, password }),
       headers: {

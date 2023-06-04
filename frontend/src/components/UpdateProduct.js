@@ -17,7 +17,7 @@
 
 
 const getProductDetails =  async ()=>{
-    let result = await fetch(`http://localhost:5000/product/${params.id}`,{headers: {
+    let result = await fetch(`https://contactapp-grq6.onrender.com/product/${params.id}`,{headers: {
       authorization:`bearer ${JSON.parse(localStorage.getItem('token')) }`,
     },})
     result = await result.json();
@@ -31,7 +31,7 @@ const getProductDetails =  async ()=>{
  const updateProduct =   async()=>{
     console.log(name,price,company,category)
 
-    let result=   await fetch(`http://localhost:5000/product/${params.id}`,{
+    let result=   await fetch(`https://contactapp-grq6.onrender.com/product/${params.id}`,{
         method: 'put',
         body:JSON.stringify({
             name,price,company,category
@@ -66,33 +66,6 @@ const getProductDetails =  async ()=>{
         }}
         value={price}
       />
-      
-      {/* <input
-        type="text"
-        placeholder="product category"
-        onChange={(e) => {
-          setCategory(e.target.value);
-        }}
-        value={category}
-      />
-      
-      <input
-        type="text"
-        placeholder="product company"
-        onChange={(e) => {
-          setCompany(e.target.value);
-        }}
-        value={company}
-      />
-
-<input
-        type="text"
-        placeholder="product company"
-        onChange={(e) => {
-          setDate(date);
-        }}
-        value={date}
-      /> */}
       <button onClick={updateProduct}>Update Contact</button>
     </div>
   );
